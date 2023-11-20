@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="js/script.js">
+  <title>Trip advisor</title>
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="height: 70px; font-size: 20px;">
+
+    <a class="navbar-brand" href="#"><img src="images/Tripadvisor-Logo1.png" alt="logo" style="width: 200px;"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Discover</a>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Cities
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size:15px;">
+            <a class="dropdown-item" href="#">Jerusalem</a>
+            <a class="dropdown-item" href="#">Gaza</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Yafa</a>
+            <a class="dropdown-item" href="#">Nabuls</a>
+            <a class="dropdown-item" href="#">Beit Lahia</a>
+            <a class="dropdown-item" href="#">Jenin</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Community</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success  mr-sm-2" type="submit"><i class="fas fa-search"></i></button>
+        <button class="btn btn-outline-success mr-sm-2" type="submit">Log in</button>
+        <button class="btn btn-outline-success mr-sm-5" type="submit">Sign up</button>
+
+
+      </form>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide sec1" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/aqsa.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Jerusalem</h1>
+          <p>Capital of Palestine </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/pexels-kelly-17291323.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block overlay">
+          <h1>Yafa</h1>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/Ashdod.jpeg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block overlay">
+          <h1>Ashdod</h1>
+
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <hr>
+
+  <div class="mx-auto my-3 p-3 text-center shadow-lg">
+    <h2>Things to Do in Palestine</h2>
+    <div class="row">
+      <div class="col mt-3">
+        <div class="accordion " id="accordionExample">
+          <div class="card bg-light">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  <h5>Cultural Tours</h5>
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Experiences you don’t want to miss!
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-light">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h5>City Tours</h5>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                Are tour guides are professionals, well experienced, with lots of patience, sense of hummer and very
+                knowledgeable. You will see the hidden and off the beaten track sites of the city.
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-light">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h5> History Museums</h5>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by
+                default.
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light">
+            <div class="card-header" id="headingfour">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                  <h5>Self guided tours</h5>
+                </button>
+              </h2>
+            </div>
+            <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
+              <div class="card-body">
+                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by
+                default.
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light">
+            <div class="card-header" id="headingfive">
+              <h2 class="mb-0">
+                <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                  <h5>Special offers</h5>
+                </button>
+              </h2>
+            </div>
+            <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+              <div class="card-body">
+                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by
+                default.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col mt-3">
+        <img src="images/al_aqsaa.jpg" alt="img" class="img1">
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron bg-light">
+    <div class="mx-auto  p-2 text-center text-shadow rounded-2" style="background-color: #02cc8fb7">
+      <h2>Search in Maps</h2>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+
+        <div class="container">
+          <h3 class="card-title text-center">Look where you want to go!</h3>
+          <div class=" d-flex justify-content-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54416.80859482072!2d34.41249741127394!3d31.522771898174735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fd7f0548ea98e5%3A0x39808a355db5c4b6!2sPalestine%20Square!5e0!3m2!1sen!2seg!4v1700330359935!5m2!1sen!2seg"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          </div>
+          <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal" style="width: 200px;">Search</button>
+        </div>
+      </div>
+
+
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Searching..</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              You have searched for a place in Palestine Successfully!
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- jumbotron -->
+  <div class="back">
+  </div>
+  <div class="mx-auto mb-3 p-3 text-center text-shadow text-secondary rounded-3 shadow-lg "
+    style="background-color:rgba(181, 181, 181, 0.146)">
+    <h1 class="title" style="font-size: 40px;">Popular destinations in Palestine</h1>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row justify-content-around pb-5">
+      <!-- 1st card -->
+      <div class="card text-center bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow city">
+        <input type="image" src="images/akka_city.jpg" class="card-img-top shadow mt-3">
+        <div class="card-body">
+          <h3 class="card-title">Akka City</h3>
+          <button class="btn btn-info btn-outline-success mx-auto d-block">Know More</button>
+        </div>
+      </div>
+      <!-- 2nd -->
+      <div class="card text-center bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow city">
+        <input type="image" src="images/yafa.webp" class="card-img-top shadow mt-3">
+        <div class="card-body">
+          <h3 class="card-title">Yafa City</h3>
+          <button class="btn btn-info btn-outline-success mx-auto d-block">Know More</button>
+        </div>
+      </div>
+      <!-- 3rd -->
+      <div class="card text-center bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow city">
+        <input type="image" src="images/nablus.jpg" class="card-img-top shadow mt-3">
+        <div class="card-body">
+          <h3 class="card-title">Nabuls</h3>
+          <button class="btn btn-info btn-outline-success mx-auto d-block">Know More</button>
+        </div>
+      </div>
+      <!-- 4th -->
+      <div class="card text-center bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow city">
+        <input type="image" src="images/Bethlehem-2-1.jpg" class="card-img-top shadow mt-3">
+        <div class="card-body">
+          <h3 class="card-title">Bethlehem</h3>
+          <button class="btn btn-info btn-outline-success mx-auto d-block">Know More</button>
+        </div>
+      </div>
+      <!-- 5th -->
+      <div class="card text-center bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow city">
+        <input type="image" src="images/Deir-al-Balah-city.jpg" class="card-img-top shadow mt-3">
+        <div class="card-body">
+          <h3 class="card-title">Deir Al Balah</h3>
+          <button class="btn btn-info btn-outline-success mx-auto d-block">Know More</button>
+        </div>
+      </div>
+      <!-- 6th -->
+      <div class="card text-center bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow city">
+        <input type="image" src="images/Ramallah.jpeg" class="card-img-top shadow mt-3">
+        <div class="card-body">
+          <h3 class="card-title">Ram Allah</h3>
+          <button class="btn btn-info btn-outline-success mx-auto d-block">Know More</button>
+        </div>
+      </div>
+      <!-- 7th -->
+      <div class="card text-center bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow city">
+        <input type="image" src="images/jenin.jpg" class="card-img-top shadow mt-3">
+        <div class="card-body">
+          <h3 class="card-title">Jenin City</h3>
+          <button class="btn btn-info btn-outline-success mx-auto d-block">Know More</button>
+        </div>
+      </div>
+
+      <!-- 8th -->
+      <div class="card text-center bg-light text-success col-lg-3 col-md-4 col-sm-6 m-1 mt-5 shadow city">
+        <input type="image" src="images/khanuounis.jpg" class="card-img-top shadow mt-3">
+        <div class="card-body">
+          <h3 class="card-title">Khan younis</h3>
+          <button class="btn btn-info btn-outline-success mx-auto d-block">Know More</button>
+        </div>
+      </div>
+
+      <!-- last one -->
+    </div>
+  </div>
+
+  <div class=" back back2">
+  </div>
+
+  <aside>
+    <div class="container-fluid p-0 " style="position: relative;">
+
+      <div class="d-flex flex-column justify-content-between ms-auto"
+        style="position: fixed; z-index:90; top:203px; right:22px; font-size: 50px;">
+        <div class="aside-icon"><a href="#"><i class="fab fa-facebook-square i1"></i></a></div>
+        <div class="aside-icon "><a href="#"><i class="fab fa-whatsapp-square i1"></i></a></div>
+        <div class="aside-icon "><a href="#"><i class="fab fa-twitter-square i1"></i></a></div>
+        <div class="aside-icon "><a href="#"><i class="fab fa-linkedin i1"></i></a></div>
+        <div class="aside-icon "><a href="#"><i class="fab fa-instagram-square i1"></i></a></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="card p-3 shadow-lg">
+    <h2 class="text-center m-3 title" style="font-size: 40px;">Al Aqsa Mosque</h2>
+  </div>
+
+  <section class="wrapper">
+    <div class="container mt-5" style="width: 100%; min-height: 500px;">
+      <div class="row">
+
+        <!-- card1 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card card-hover card-has-bg click-col aqsa_card">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h4 class="card-title text-center mt-0 text-light"><a herf="#"><i class="fas fa-mosque text-light"></i>
+                    Al Aqsa Interior</a></h4>
+                <div class="media mt-3 justify-content-center">
+                  <img class=" rounded " src="images/al-aqsa1.jpg" alt="photo" style="width:200px">
+
+                </div>
+              </div>
+
+            </div>
+          </div> <!-- /card -->
+        </div> <!-- /card1 -->
+
+        <!-- card2 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card card-hover card-has-bg click-col aqsa_card aqsa_card2">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h4 class="card-title text-center mt-0 text-light"><a herf="#"><i class="fas fa-mosque text-light"></i>
+                    Dome of the Rock</a></h4>
+                <div class="media mt-3 justify-content-center">
+                  <img class="shadow rounded " src="images/al-aqsa2.webp" alt="photo" style="width:200px">
+
+                </div>
+              </div>
+
+            </div>
+          </div> <!-- /card -->
+        </div> <!-- /card2 -->
+
+        <!-- card3 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card card-hover card-has-bg click-col aqsa_card aqsa_card3">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h4 class="card-title text-center mt-0 text-light"><a herf="#"><i class="fas fa-mosque text-light"></i>
+                    Al-Qibli Mosque</a></h4>
+                <div class="media mt-3 justify-content-center">
+                  <img class="shadow rounded " src="images/al-aqsa3.jpg" alt="photo" style="width:300px">
+
+                </div>
+              </div>
+
+            </div>
+          </div> <!-- /card -->
+        </div> <!-- /card3-->
+      </div>
+    </div>
+  </section>
+<hr>
+
+<div class="container">
+  <h2 class="text-center text-dark">What to eat in Palestine</h2>
+
+  <div class="row food_card mt-4"> <!-- food 1 -->
+    <div class="col-lg-6 col-md-8 m-0 p-0">
+      <img src="images/food1.jpg"  alt="" class="food_img" draggable="false" >
+    </div>
+    <div class="col col-lg-6 col-md-4 col-sm-12">
+      <h2 class="mt-2">Maqluba</h2>
+      <div class="small">
+        PALESTINE and  3 more regions
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star-half-alt i2"></i>
+        <i class="far fa-star i2"></i>
+      </div>
+      <div class="bar"></div>
+      <div class="word">Maqluba is the national dish of Palestine, but it can also be found in Iraq, Syria, and Jordan. This layered one-pot dish has many versions, but the basic principle is to turn it upside down before serving, which is what the word maqluba means.</div>
+      <ul class=" box mt-2">
+        <li class="tag__item"><button class="btn btn-warning"><i class="fas fa-check"></i> Ate it? Rate it</button></li>
+        <li class="tag__item"><button class="btn btn-outline-secondary"><i class="fas fa-bookmark"></i> Wanna try?</button></li>
+        <li class="tag__item"><button class="btn btn-warning"><i class="fas fa-utensils"></i> Look for restaurant!</button></li> 
+      </ul>
+
+
+    </div>
+  </div>
+  <div class="row food_card mt-4"> <!-- food 2 -->
+    
+    <div class="col col-lg-6 col-md-4 col-sm-12">
+      <h2 class="mt-4">Hummus</h2>
+      <div class="small">
+        PALESTINE and  6 more regions
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star-half-alt i2"></i>
+        
+      </div>
+      <div class="bar"></div>
+      <div class="word">This internationally popular, beige-colored spread is traditionally made with mashed chickpeas, tahini sesame paste, lemon juice, and garlic. People across the world love hummus for its tangy flavor and the fact that it is filled with nutrients.</div>
+      <ul class=" box mt-2">
+        <li class="tag__item"><button class="btn btn-warning"><i class="fas fa-check"></i> Ate it? Rate it</button></li>
+        <li class="tag__item"><button class="btn btn-outline-secondary"><i class="fas fa-bookmark"></i> Wanna try?</button></li>
+        <li class="tag__item"><button class="btn btn-warning"><i class="fas fa-utensils"></i> Look for restaurant!</button></li> 
+      </ul>
+
+
+    </div>
+    <div class="col-lg-6 col-md-8 m-0 p-0">
+      <img src="images/food2.jpg"  alt="" class="food_img f2" draggable="false" >
+    </div>
+  </div>
+  <div class="row food_card mt-4"> <!-- food 3 -->
+    <div class="col-lg-6 col-md-8 m-0 p-0">
+      <img src="images/food3.jpg"  alt="" class="food_img" draggable="false" >
+    </div>
+    <div class="col col-lg-6 col-md-4 col-sm-12">
+      <h2 class="mt-2">Shakshouka</h2>
+      <div class="small">
+        PALESTINE and  7 more regions
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star i2"></i>
+        <i class="far fa-star i2"></i>
+      </div>
+      <div class="bar"></div>
+      <div class="word">Shakshouka is a delicious combination of eggs poached in a spicy tomato sauce. Although it has an unusual name, the dish is straightforward and easy to make. It is usually made in a skillet in which onions, tomatoes, and spices are cooked until they form a delicious tomato sauce.</div>
+      <ul class=" box mt-2">
+        <li class="tag__item"><button class="btn btn-warning"><i class="fas fa-check"></i> Ate it? Rate it</button></li>
+        <li class="tag__item"><button class="btn btn-outline-secondary"><i class="fas fa-bookmark"></i> Wanna try?</button></li>
+        <li class="tag__item"><button class="btn btn-warning"><i class="fas fa-utensils"></i> Look for restaurant!</button></li> 
+      </ul>
+
+
+    </div>
+  </div>
+  <div class="row food_card mt-4"> <!-- food 4-->
+    
+    <div class="col col-lg-6 col-md-4 col-sm-12">
+      <h2 class="mt-4">Musakhan</h2>
+      <div class="small">
+        PALESTINE 
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star i2"></i>
+        <i class="fas fa-star-half-alt i2"></i>
+        
+      </div>
+      <div class="bar"></div>
+      <div class="word">Musakhan is a Palestinian dish consisting of roasted chicken and caramelized onions that are garnished with pine nuts and arranged on top of taboon bread that's previously been dipped in olive oil. The name of the dish comes from the Arabic word sakhan, which once translated, reveals the method of preparing — something that's heated.</div>
+      <ul class=" box mt-2">
+        <li class="tag__item"><button class="btn btn-warning"><i class="fas fa-check"></i> Ate it? Rate it</button></li>
+        <li class="tag__item"><button class="btn btn-outline-secondary"><i class="fas fa-bookmark"></i> Wanna try?</button></li>
+        <li class="tag__item"><button class="btn btn-warning"><i class="fas fa-utensils"></i> Look for restaurant!</button></li> 
+      </ul>
+
+
+    </div>
+    <div class="col-lg-6 col-md-8 m-0 p-0">
+      <img src="images/food4.jpg"  alt="" class="food_img f2" draggable="false" >
+    </div>
+  </div>
+</div>
+<hr>
+<h2 class="text-center text-dark title2" style="font-size: 35px;">Join Us</h2>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="card icon1 bg-light rounded m-3" style="width: 250px; height: 250px;">
+    <h3 class="text-center text-primary pt-3">Facebook Link</h3>
+   <div class="btn btn-outline-secondary icon_btn" style="align-self: center;">
+    <!-- <a href=""></a> -->
+    <img class="icon_img" src="images/face.png" alt="icon" width="170">
+  </div>
+    </div>
+    <div class="card icon1 bg-light rounded m-3" style="width: 250px; height: 250px;">
+      <h3 class="text-center text-danger pt-3">Instagram</h3>
+     <div class="btn btn-outline-secondary icon_btn " style="align-self: center;">
+      <!-- <a href=""></a> -->
+      <img class="icon_img" src="images/insta.png" alt="icon" width="170">
+    </div>
+      </div>
+    <div class="card icon1 bg-light rounded m-3" style="width: 250px; height: 250px;">
+      <h3 class="text-center text-info pt-3">Linkedin</h3>
+     <div class="btn btn-outline-secondary icon_btn" style="align-self: center;">
+      <!-- <a href=""></a> -->
+      <img class="icon_img" src="images/link.png" alt="icon" width="170">
+    </div>
+      </div>
+      <div class="card icon1 bg-light rounded m-3" style="width: 250px; height: 250px;">
+        <h3 class="text-center text-warning pt-3">Snap Chat</h3>
+       <div class="btn btn-outline-secondary icon_btn" style="align-self: center;">
+        <!-- <a href=""></a> -->
+        <img class="icon_img" src="images/snap.png" alt="icon" width="170">
+      </div>
+        </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <hr>
+
+      <h5><img src="images/Tripadvisor-Logo2.png" alt="logo" class="rounded-circle" width="50px">  Trip Advisor</h5>
+
+      <hr>
+
+      <address>
+        <p>Tel : 000-000-000</p>
+        <p>Address : PALESTINE</p>
+        <p>Fax : 000-000-000</p>
+      </address>
+
+    </div>
+
+    <div class="col-md-4">
+      <hr>
+      <h5><img src="images/Tripadvisor-Logo2.png" alt="photo" class="rounded-circle" width="50px"> Important links</h5>
+      <hr>
+
+      <p><a href="#">Visit Us</a></p>
+      <p><a href="#">Take alook</a></p>
+      <p><a href="#">Owners</a></p>
+    </div>
+
+    <div class="col-md-4">
+      <hr >
+      <h5><img src="images/Tripadvisor-Logo2.png" alt="logo" class="rounded-circle" width="50px"> Vision</h5>
+      <hr>
+      <p>Best Trip</p>
+      <p>Amazing Holiday with Us</p>
+      <p>Terms of Use</p>
+    </div>
+
+  </div>
+</div>
+<hr>
+<span class="text-center d-block title">Copyright © 2023 Trip Advisor. All
+  rights</span>
+<hr >
+<!-- /footer -->    
+
+
+</footer>
+
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
